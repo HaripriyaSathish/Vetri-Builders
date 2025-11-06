@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        header{
+            background-color: #040837;
+            padding: 20px;
+            position: sticky;
+             top: 0;
+             z-index: 1;
+              align-items: center;
+             
+           
+        }
+ 
+        nav{
+            
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            align-items: center;
+             padding: 15px 100px;
+           
+           
+        }
+ 
+       .nav-links a{
+        color: white;
+        text-decoration: none;
+       }
+ 
+ 
+       .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+       }
+ 
+       a{
+        color: white;
+        text-decoration: none;
+       }
+       a:hover{
+        color: orange;
+        transition: 0.2s;
+       }
+ 
+       .btn{
+        background-color: orange;
+        /* color: black; */
+        padding: 10px;
+        border-radius: 5px;
+       }
+       .btn:hover{
+        color: black;
+        background-color: rgb(251, 181, 52);
+        transition: 0.2s;
+       }
+       .logoimg{
+         width: 60px;
+         height: auto;
+       }
+       .hero img {
+      
+background: url(images/projectbanner.png) no-repeat center center;
+        height: 90vh;
+        display: flex;
+        width: 100%;
+
+}
+.milestones {
+  text-align: center;
+  padding: 60px 5%;
+}
+
+.milestones h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.milestones h2 span {
+  color: #f7c600; /* golden yellow */
+}
+
+.milestones-gallery {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.milestones-gallery img {
+  width: 100%;
+  max-width: 197px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestones-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  background-color: #030b33;
+  color: white;
+  padding: 60px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  color: #ffcc00;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.footer-middle ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-right ul li i {
+  color: #ffcc00;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+        
+               <a href="index.html"><img src="images/vetribuilderslogo.png"  class="logoimg"></a>
+ 
+ 
+            <ul class="nav-links">
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="planandprice.html">Plan&Pricing</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="enquiryform.html"class="btn">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+    <img src="images/projectbanner.png" alt="Modern House">
+  </section>
+  <section class="milestones">
+    <h2>Our <span>Milestones</span></h2>
+    <div class="milestones-gallery">
+      <img src="images/mile1.png" alt="Milestone 1">
+      <img src="images/mile2.png" alt="Milestone 2">
+      <img src="images/mile3.png" alt="Milestone 3">
+      <img src="images/mile4.png" alt="Milestone 4">
+      <img src="images/mile5.png" alt="Milestone 5">
+      <img src="images/mile6.png" alt="Milestone 6">
+      <img src="images/mile7.png" alt="Milestone 7">
+      <img src="images/mile8.png" alt="Milestone 8">
+      <img src="images/mile9.png" alt="Milestone 9">
+      <img src="images/mile10.png" alt="Milestone 10">
+       <img src="images/mile11.png" alt="Milestone 11">
+      <img src="images/mile12.png" alt="Milestone 12">
+      <img src="images/mile13.png" alt="Milestone 13">
+      <img src="images/mile14.png" alt="Milestone 14">
+      <img src="images/mile15.png" alt="Milestone 15">
+      <img src="images/mile16.png" alt="Milestone 16">
+      <img src="images/mile17.png" alt="Milestone 17">
+      <img src="images/mile18.png" alt="Milestone 18">
+      <img src="images/mile19.png" alt="Milestone 19">
+      <img src="images/mile20.png" alt="Milestone 20">
+       <img src="images/mile21.png" alt="Milestone 21">
+      <img src="images/mile22.png" alt="Milestone 22">
+      <img src="images/mile23.png" alt="Milestone 23">
+      <img src="images/mile24.png" alt="Milestone 24">
+      <img src="images/mile25.png" alt="Milestone 25">
+      <img src="images/mile26.png" alt="Milestone 26">
+      <img src="images/mile27.png" alt="Milestone 27">
+      <img src="images/mile28.png" alt="Milestone 28">
+      <img src="images/mile29.png" alt="Milestone 29">
+      <img src="images/mile30.png" alt="Milestone 30">
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <img src="images/vetribuilderslogo.png" alt="Vetri Builders Logo" class="footer-logo">
+        <p>
+          Vetri Builders offering a range of services from residential and commercial
+          building to interior design and renovation.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="footer-middle">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Plans and Pricing</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 9597751076, 9443102048</li>
+          <li><i class="fas fa-envelope"></i> vetribuilders2@gmail.com</li>
+          <li><i class="fas fa-globe"></i> www.vetribuilders.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 4/26A Adaikalapattinam, Pavoorchatram.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

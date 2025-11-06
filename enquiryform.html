@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Enquiry Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.enquiry-section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ---------- LEFT SIDE ---------- */
+.left-section {
+  flex: 1;
+  background-color: #fff5cc;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.left-section h2 {
+  font-size: 28px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.left-section h2 span {
+  color: #f4b000;
+}
+
+.left-section p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.left-section img {
+  width: 70%;
+  max-width: 320px;
+  margin-top: 30px;
+}
+
+/* ---------- RIGHT SIDE ---------- */
+.right-section {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 60px 80px;
+  position: relative;
+}
+
+.right-section h2 {
+  font-size: 28px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.right-section h2 span {
+  color: #f4b000;
+}
+
+/* ---------- CLOSE BUTTON ---------- */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* ---------- FORM STYLING ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+
+input, select, textarea {
+  padding: 12px 15px;
+  border: 1.5px solid #f4b000;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.submit-btn {
+  background-color: #f4b000;
+  color: #000;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e0a500;
+}
+
+  </style>
+</head>
+<body>
+  <div class="enquiry-section">
+    <div class="left-section">
+      <h2>Do you have a <span>Questions?</span></h2>
+      <p>Serving the greater Seattle area beyond. For more information on our services, or to inquire about a future project, give us a call!</p>
+      <img src="images/enquiryform.png" alt="Get in touch illustration">
+    </div>
+
+    <div class="right-section">
+      <button class="close-btn">&times;</button>
+      <h2>Quick <span>Enquiry</span></h2>
+
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Your Name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter Your Email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required>
+
+        <label>Select Services</label>
+        <select>
+          <option>Services</option>
+          <option>Web Development</option>
+          <option>App Development</option>
+          <option>Consulting</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea placeholder="Your Message"></textarea>
+
+        <div class="checkbox">
+          <input type="checkbox" id="robot">
+          <label for="robot">I'm not a robot</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

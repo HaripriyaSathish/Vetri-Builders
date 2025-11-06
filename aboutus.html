@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        header{
+            background-color: #040837;
+            padding: 20px;
+            position: sticky;
+             top: 0;
+             z-index: 1;
+              align-items: center;
+             
+           
+        }
+ 
+        nav{
+            
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            align-items: center;
+             padding: 15px 100px;
+           
+           
+        }
+ 
+       .nav-links a{
+        color: white;
+        text-decoration: none;
+       }
+ 
+ 
+       .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+       }
+ 
+       a{
+        color: white;
+        text-decoration: none;
+       }
+       a:hover{
+        color: orange;
+        transition: 0.2s;
+       }
+ 
+       .btn{
+        background-color: orange;
+        /* color: black; */
+        padding: 10px;
+        border-radius: 5px;
+       }
+       .btn:hover{
+        color: black;
+        background-color: rgb(251, 181, 52);
+        transition: 0.2s;
+       }
+       .logoimg{
+         width: 60px;
+         height: auto;
+       }
+       .hero img {
+      
+background: url(images/aboutvb\ 1.png) no-repeat center center;
+        height: 90vh;
+        display: flex;
+        width: 100%;
+
+}
+.about-title {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-title h2 span {
+  color: #f4b400; /* Yellow color */
+}
+.builders-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 100px;
+}
+
+.images-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.image-box {
+  width: 270px;
+  height: 300px;
+  
+  background: no-repeat center center; /* ensures image won't repeat */
+  border-radius: 50px;
+}
+
+.text-column {
+  max-width: 700px;
+}
+
+.text-column p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #222;
+  text-align: justify;
+}
+
+.text-column .highlight {
+  color: #e6ac00;
+  font-weight: bold;
+}
+.footer {
+  background-color: #030b33;
+  color: white;
+  padding: 60px 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  color: #ffcc00;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.footer-middle ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-middle ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-right ul li i {
+  color: #ffcc00;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+        
+               <a href="index.html"><img src="images/vetribuilderslogo.png"  class="logoimg"></a>
+ 
+ 
+            <ul class="nav-links">
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="planandprice.html">Plan&Pricing</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="enquiryform.html"class="btn">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+    <img src="images/aboutvb 1.png" alt="Modern House">
+  </section>
+<section class="about-title">
+    <h2><span>About</span> Us</h2>
+  </section>
+   <section class="builders-section">
+    <div class="images-column">
+      <img src="images/aboutvb grp 1.png" alt="Construction Image 1">
+    </div>
+
+    <div class="text-column">
+      <p>
+        At <span class="highlight">Vetri Builders</span> we specialize in constructing 
+        innovative and durable buildings tailored to your vision. With years of expertise 
+        and a commitment to excellence, we deliver projects that combine functionality, 
+        aesthetics, and sustainability. From design to delivery, we ensure every step of 
+        the process meets the highest standards.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <img src="images/vetribuilderslogo.png" alt="Vetri Builders Logo" class="footer-logo">
+        <p>
+          Vetri Builders offering a range of services from residential and commercial
+          building to interior design and renovation.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="footer-middle">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Plans and Pricing</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 9597751076, 9443102048</li>
+          <li><i class="fas fa-envelope"></i> vetribuilders2@gmail.com</li>
+          <li><i class="fas fa-globe"></i> www.vetribuilders.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 4/26A Adaikalapattinam, Pavoorchatram.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
